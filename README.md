@@ -29,7 +29,7 @@ graph TD
         A6 --> B3[Bulk Ingestion Service]
 
         B2 --> C1[Ingestion Workers]
-        C1 --> C2[Validation & Deduplication]
+        C1 --> C2[Validation and Deduplication]
         C2 --> C3[Conflict Resolution Logic]
         C3 --> C4[NLP Sentiment Processor]
     end
