@@ -19,7 +19,7 @@ graph TD
         A6[Historical Data: CSVs, Shapefiles]
     end
 
-    subgraph Ingestion and ETL Pipeline (The "Taka" Pipeline)
+    subgraph Ingestion and ETL Pipeline [The Taka Pipeline]
         B1[Load Balancer] --> B2{Queueing System: Kafka/RabbitMQ}
         A1 --> B1
         A2 --> B1
