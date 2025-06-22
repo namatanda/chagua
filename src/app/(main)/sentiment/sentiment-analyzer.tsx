@@ -1,6 +1,6 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useActionState, useFormStatus } from "react";
 import { getSentimentAnalysis } from "./actions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -51,7 +51,7 @@ function SentimentResultCard({ title, sentiment }: { title: string, sentiment: s
 }
 
 export function SentimentAnalyzer() {
-  const [state, formAction] = useFormState(getSentimentAnalysis, initialState);
+  const [state, formAction] = useActionState(getSentimentAnalysis, initialState);
 
   return (
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
