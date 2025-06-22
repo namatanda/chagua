@@ -19,7 +19,7 @@ graph TD
         A6[Historical Data: CSVs, Shapefiles]
     end
 
-    subgraph Ingestion & ETL Pipeline (The "Taka" Pipeline)
+    subgraph Ingestion and ETL Pipeline (The "Taka" Pipeline)
         B1[Load Balancer] --> B2{Queueing System: Kafka/RabbitMQ}
         A1 --> B1
         A2 --> B1
@@ -34,7 +34,7 @@ graph TD
         C3 --> C4[NLP Sentiment Processor]
     end
 
-    subgraph Data & Analytics Core
+    subgraph Data and Analytics Core
         D1[PostgreSQL + PostGIS DB]
         D2[TimescaleDB for Time-Series]
         D3[Redis for Caching/Live Counters]
